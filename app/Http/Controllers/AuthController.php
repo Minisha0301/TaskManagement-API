@@ -16,6 +16,7 @@ class AuthController extends Controller
                     ->subject('OTP Verification');
         });
 
+
         return response()->json(['message' => 'OTP sent']);
     }
 

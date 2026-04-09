@@ -13,7 +13,7 @@ class FrequencySeeder extends Seeder
      */
     public function run(): void
     {
-        foreach(['Daily','Week;y','Monthly'] as $frequency) {
+        foreach(['Daily','Weekly','Monthly'] as $frequency) {
          DB::table('frequency_types')->insert([
             'name' => $frequency
          ]);

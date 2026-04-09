@@ -6,7 +6,7 @@ use App\Models\FrequencyType;
 
 class SummaryService
 {
-    public function getUserSummary($userId)
+    public function getUserSummary()
     {
         $frequencies = FrequencyType::with(['tasks.subtasks'])->get();
 

@@ -10,6 +10,7 @@ class TaskService
 {
     public function createTaskWithSubtasks(array $data)
     {
+
         return DB::transaction(function () use ($data) {
 
             $task = $this->createTask($data);
